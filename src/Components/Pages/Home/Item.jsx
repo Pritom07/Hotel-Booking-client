@@ -1,9 +1,38 @@
+import axios from "axios";
 import PropTypes from "prop-types";
 import { CgEditBlackPoint } from "react-icons/cg";
+import Swal from "sweetalert2";
 
-const Item = ({ room, isShown }) => {
+const Item = ({ room, isShown, roomData, setRoomData }) => {
   const { _id, type, roomNo, pricePerNight, description, beds, available } =
     room;
+
+  const handleRoomDelete = () => {
+    Swal.fire({
+      title: `Are you sure to delete "Room ${roomNo}"`,
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axios.delete(`http://localhost:3000/room/${_id}`).then((res) => {
+          if (res.data.deletedCount > 0) {
+            Swal.fire({
+              title: "Deleted!",
+              text: "Your Room has been deleted.",
+              icon: "success",
+            });
+            const newRoomData = roomData.filter((room) => room._id !== _id);
+            setRoomData(newRoomData);
+          }
+        });
+      }
+    });
+  };
+
   return (
     <div className="card bg-base-100 shadow-sm border-2 border-slate-200 font-raleway">
       <div className="card-body">
@@ -24,7 +53,7 @@ const Item = ({ room, isShown }) => {
         </div>
         <p className="font-semibold">
           <CgEditBlackPoint className="inline mr-1" />
-          Price Per Night : {pricePerNight}
+          Price Per Night : {pricePerNight} $
         </p>
         <p className="font-semibold">
           <CgEditBlackPoint className="inline mr-1" />
@@ -47,7 +76,10 @@ const Item = ({ room, isShown }) => {
             <button className="w-full bg-amber-500 text-white font-semibold py-1.5 rounded-[18px] cursor-pointer active:scale-x-95">
               EDIT
             </button>
-            <button className="w-full bg-red-500 text-white font-semibold py-1.5 mt-2 rounded-[18px] cursor-pointer active:scale-x-95">
+            <button
+              onClick={handleRoomDelete}
+              className="w-full bg-red-500 text-white font-semibold py-1.5 mt-2 rounded-[18px] cursor-pointer active:scale-x-95"
+            >
               DELETE
             </button>
             <button className="w-full bg-green-500 text-white font-semibold py-1.5 mt-2 rounded-[18px] cursor-pointer active:scale-x-95">

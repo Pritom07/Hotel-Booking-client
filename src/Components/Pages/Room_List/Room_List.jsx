@@ -52,7 +52,13 @@ const Room_List = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8 max-w-6xl mx-auto mt-5 px-2">
         {roomData.map((room) => (
-          <Item key={room._id} room={room} isShown={true} />
+          <Item
+            key={room._id}
+            room={room}
+            isShown={true}
+            roomData={roomData}
+            setRoomData={setRoomData}
+          />
         ))}
       </div>
 

@@ -5,7 +5,7 @@ const Item = ({ room, isShown }) => {
   const { _id, type, roomNo, pricePerNight, description, beds, available } =
     room;
   return (
-    <div className="card bg-base-100 w-96 shadow-sm border-2 border-slate-200 font-raleway">
+    <div className="card bg-base-100 shadow-sm border-2 border-slate-200 font-raleway">
       <div className="card-body">
         <h2 className="text-2xl font-semibold">Room No : {roomNo}</h2>
         <p className="font-semibold">
@@ -44,13 +44,13 @@ const Item = ({ room, isShown }) => {
         </p>
         {isShown ? (
           <div className="mt-2">
-            <button className="w-full bg-amber-500 text-white font-semibold py-1.5 rounded-xl cursor-pointer active:scale-x-95">
+            <button className="w-full bg-amber-500 text-white font-semibold py-1.5 rounded-[18px] cursor-pointer active:scale-x-95">
               EDIT
             </button>
-            <button className="w-full bg-red-500 text-white font-semibold py-1.5 mt-1.5 rounded-xl cursor-pointer active:scale-x-95">
+            <button className="w-full bg-red-500 text-white font-semibold py-1.5 mt-2 rounded-[18px] cursor-pointer active:scale-x-95">
               DELETE
             </button>
-            <button className="w-full bg-green-500 text-white font-semibold py-1.5 mt-1.5 rounded-xl cursor-pointer active:scale-x-95">
+            <button className="w-full bg-green-500 text-white font-semibold py-1.5 mt-2 rounded-[18px] cursor-pointer active:scale-x-95">
               BOOK
             </button>
           </div>

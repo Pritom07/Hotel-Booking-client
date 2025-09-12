@@ -78,5 +78,85 @@
     "pricePerNight": 190,
     "description": "Large family suite with two bathrooms",
     "available": true
+  },
+  {
+    "roomNo": 111,
+    "type": "Deluxe",
+    "beds": 2,
+    "pricePerNight": 125,
+    "description": "Modern deluxe room with smart TV",
+    "available": true
+  },
+  {
+    "roomNo": 112,
+    "type": "Single",
+    "beds": 1,
+    "pricePerNight": 85,
+    "description": "Single room with garden view",
+    "available": false
+  },
+  {
+    "roomNo": 113,
+    "type": "Suite",
+    "beds": 3,
+    "pricePerNight": 210,
+    "description": "Suite with private lounge",
+    "available": true
+  },
+  {
+    "roomNo": 114,
+    "type": "Double",
+    "beds": 2,
+    "pricePerNight": 115,
+    "description": "Cozy double room with balcony",
+    "available": true
+  },
+  {
+    "roomNo": 115,
+    "type": "Family",
+    "beds": 4,
+    "pricePerNight": 195,
+    "description": "Spacious family room with dining area",
+    "available": false
+  },
+  {
+    "roomNo": 116,
+    "type": "Deluxe",
+    "beds": 2,
+    "pricePerNight": 140,
+    "description": "Deluxe room with pool access",
+    "available": true
+  },
+  {
+    "roomNo": 117,
+    "type": "Single",
+    "beds": 1,
+    "pricePerNight": 70,
+    "description": "Basic single room with free WiFi",
+    "available": true
+  },
+  {
+    "roomNo": 118,
+    "type": "Suite",
+    "beds": 3,
+    "pricePerNight": 230,
+    "description": "Luxury suite with panoramic view",
+    "available": true
+  },
+  {
+    "roomNo": 119,
+    "type": "Double",
+    "beds": 2,
+    "pricePerNight": 105,
+    "description": "Standard double room with minibar",
+    "available": false
+  },
+  {
+    "roomNo": 120,
+    "type": "Family",
+    "beds": 5,
+    "pricePerNight": 220,
+    "description": "Extra-large family room with kitchen",
+    "available": true
   }
 ]

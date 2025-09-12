@@ -6,9 +6,9 @@ import { FaArrowRight } from "react-icons/fa6";
 const Homeitems = ({ roomData }) => {
   const newroomData = roomData.slice(0, 6);
   return (
-    <div>
+    <div className="min-h-screen">
       <p className="text-center font-semibold text-4xl mt-5">Room's Overview</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-7 gap-x-14 max-w-6xl mx-auto mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-screen lg:max-w-6xl mx-auto mt-4 px-2">
         {newroomData.map((room) => (
           <Item key={room._id} room={room} isShown={false} />
         ))}

@@ -13,7 +13,11 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<App />}>
-        <Route index element={<Home />}></Route>
+        <Route
+          index
+          loader={() => fetch("http://localhost:3000/rooms")}
+          element={<Home />}
+        ></Route>
         <Route path="/rooms" element={<Room_List />}></Route>
         <Route path="/create-room" element={<Add_Room />}></Route>
         <Route path="/booking-summary" element={<Booking_Summary />}></Route>

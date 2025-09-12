@@ -42,13 +42,13 @@ const Navbar = () => {
       <section className="flex justify-between items-center px-4 md:px-10 h-full">
         <div className="flex">
           <img src="/Image/hotelicon.png" className="w-10" />
-          <a className="btn btn-ghost text-xl md:text-2xl">
+          <a className="btn btn-ghost text-xl md:text-2xl font-raleway">
             Hotel Booking System
           </a>
         </div>
 
         <div className="hidden lg:block">
-          <ul className="flex flex-row justify-between items-center gap-8 cursor-pointer">
+          <ul className="flex flex-row justify-between items-center gap-8 cursor-pointer font-raleway">
             {navItems}
           </ul>
         </div>

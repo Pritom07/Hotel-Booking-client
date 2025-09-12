@@ -1,0 +1,82 @@
+[
+  {
+    "roomNo": 101,
+    "type": "Deluxe",
+    "beds": 2,
+    "pricePerNight": 120,
+    "description": "Spacious deluxe room with sea view",
+    "available": true
+  },
+  {
+    "roomNo": 102,
+    "type": "Single",
+    "beds": 1,
+    "pricePerNight": 80,
+    "description": "Budget single room",
+    "available": true
+  },
+  {
+    "roomNo": 103,
+    "type": "Suite",
+    "beds": 3,
+    "pricePerNight": 200,
+    "description": "Luxury suite with balcony",
+    "available": true
+  },
+  {
+    "roomNo": 104,
+    "type": "Double",
+    "beds": 2,
+    "pricePerNight": 100,
+    "description": "Standard double room",
+    "available": false
+  },
+  {
+    "roomNo": 105,
+    "type": "Family",
+    "beds": 4,
+    "pricePerNight": 180,
+    "description": "Family room with extra beds",
+    "available": true
+  },
+  {
+    "roomNo": 106,
+    "type": "Deluxe",
+    "beds": 2,
+    "pricePerNight": 130,
+    "description": "Deluxe room with city view",
+    "available": true
+  },
+  {
+    "roomNo": 107,
+    "type": "Single",
+    "beds": 1,
+    "pricePerNight": 75,
+    "description": "Compact single room",
+    "available": true
+  },
+  {
+    "roomNo": 108,
+    "type": "Suite",
+    "beds": 3,
+    "pricePerNight": 220,
+    "description": "Premium suite with kitchen",
+    "available": false
+  },
+  {
+    "roomNo": 109,
+    "type": "Double",
+    "beds": 2,
+    "pricePerNight": 110,
+    "description": "Double room with workspace",
+    "available": true
+  },
+  {
+    "roomNo": 110,
+    "type": "Family",
+    "beds": 4,
+    "pricePerNight": 190,
+    "description": "Large family suite with two bathrooms",
+    "available": true
+  }
+]

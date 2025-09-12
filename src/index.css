@@ -18,3 +18,8 @@ html {
   max-width: 1360px;
   margin: 0 auto;
 }
+
+a.active {
+  text-decoration: underline;
+  color: blue;
+}

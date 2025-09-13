@@ -16,14 +16,6 @@ Users can browse rooms, check availability, and book rooms with a simple, respon
 
 ---
 
-## ⚙️ Setup Instructions
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/Pritom07/Hotel-Booking-client.git
-cd Hotel-Booking-client
-
 📌 Features :
 
 ✅ View all rooms
@@ -38,36 +30,44 @@ cd Hotel-Booking-client
 
 ✅ Booking summary report page
 
+## ⚙️ Setup Instructions
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Pritom07/Hotel-Booking-client.git
+cd Hotel-Booking-client
+```
 
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page 1st Screenshot
-![Home Page 1](./screenshots/homepage1.PNG)
+![Home Page 1](/screenshots/homepage1.PNG)
 
 ### 🏠 Home Page 2nd Screenshot
-![Home Page 2](./screenshots/homepage2.PNG)
+![Home Page 2](/screenshots/homepage2.PNG)
 
 ### 🏠 Home Page 3rd Screenshot
-![Home Page 3](./screenshots/homepage3.PNG)
+![Home Page 3](/screenshots/homepage3.PNG)
 
 ### 🛏️ Room Card with Edit/Delete/Book button
-![Room List 1](./screenshots/Roomlist1.PNG)
+![Room List 1](/screenshots/Roomlist1.PNG)
 
 ### 🛏️ Room Card with Edit/Delete/Book button
 ![Room List 2](./screenshots/Roomlist2.PNG)
 
 ### 🛏️ Edit Room
-![Edit Room](./screenshots/Editroom.PNG)
+![Edit Room](/screenshots/Editroom.PNG)
 
 ### 🛏️ Delete Room
-![Delete Room](./screenshots/Deleteroom.PNG)
+![Delete Room](/screenshots/Deleteroom.PNG)
 
 ### 📖 Booking Room
-![Booking Room](./screenshots/Bookroom.PNG)
+![Booking Room](/screenshots/Bookroom.PNG)
 
 ### 📖 Create Room
-![Create Room](./screenshots/Createroom.PNG)
+![Create Room](/screenshots/Createroom.PNG)
 
 ### 📊 Booking Summary
-![Booking Summary](./screenshots/Bookingsummary.PNG)
-```
+![Booking Summary](/screenshots/Bookingsummary.PNG)
+

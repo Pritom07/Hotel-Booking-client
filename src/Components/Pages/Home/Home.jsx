@@ -1,7 +1,6 @@
 import { MdBedroomParent } from "react-icons/md";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import "./Home.css";
 import { Link, useLoaderData } from "react-router-dom";
 import Homeitems from "./Homeitems";
 
@@ -9,7 +8,7 @@ const Home = () => {
   const roomData = useLoaderData();
   return (
     <section>
-      <div className="hero bg-gradient-to-t from-amber-600 to-amber-300 rounded-2xl mt-2 h-auto lg:h-[32rem] scroll-smooth transition-all px-1">
+      <div className="hero bg-linear-to-r/decreasing from-indigo-500 to-teal-400 rounded-2xl mt-2 h-auto lg:h-[32rem] scroll-smooth transition-al">
         <div className="hero-content">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="w-full lg:w-[70%]  mt-2 lg:mt-0 text-center lg:text-left px-4">
@@ -17,7 +16,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 300 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.5 }}
-                className="font-raleway text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold top-text"
+                className="font-raleway text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white"
               >
                 Welcome to Your Home Away From Home
               </motion.p>
@@ -27,7 +26,7 @@ const Home = () => {
                   initial={{ opacity: 0, y: 150 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1.3, delay: 0.8 }}
-                  className="bg-blue-500 text-white font-semibold px-4 py-2 rounded-[16px] cursor-pointer mt-4 sm:mt-6"
+                  className="bg-black text-white font-semibold px-4 py-2 rounded-[16px] cursor-pointer mt-4 sm:mt-6"
                 >
                   View Room <MdBedroomParent className="inline ml-1" />
                 </motion.button>

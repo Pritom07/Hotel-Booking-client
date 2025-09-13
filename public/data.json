@@ -9,7 +9,7 @@
   },
   {
     "roomNo": 102,
-    "type": "Single",
+    "type": "Standard",
     "beds": 1,
     "pricePerNight": 80,
     "description": "Budget single room",
@@ -25,7 +25,7 @@
   },
   {
     "roomNo": 104,
-    "type": "Double",
+    "type": "Deluxe",
     "beds": 2,
     "pricePerNight": 100,
     "description": "Standard double room",
@@ -33,7 +33,7 @@
   },
   {
     "roomNo": 105,
-    "type": "Family",
+    "type": "Suite",
     "beds": 4,
     "pricePerNight": 180,
     "description": "Family room with extra beds",
@@ -49,7 +49,7 @@
   },
   {
     "roomNo": 107,
-    "type": "Single",
+    "type": "Standard",
     "beds": 1,
     "pricePerNight": 75,
     "description": "Compact single room",
@@ -65,7 +65,7 @@
   },
   {
     "roomNo": 109,
-    "type": "Double",
+    "type": "Deluxe",
     "beds": 2,
     "pricePerNight": 110,
     "description": "Double room with workspace",
@@ -73,7 +73,7 @@
   },
   {
     "roomNo": 110,
-    "type": "Family",
+    "type": "Suite",
     "beds": 4,
     "pricePerNight": 190,
     "description": "Large family suite with two bathrooms",
@@ -89,7 +89,7 @@
   },
   {
     "roomNo": 112,
-    "type": "Single",
+    "type": "Standard",
     "beds": 1,
     "pricePerNight": 85,
     "description": "Single room with garden view",
@@ -105,7 +105,7 @@
   },
   {
     "roomNo": 114,
-    "type": "Double",
+    "type": "Deluxe",
     "beds": 2,
     "pricePerNight": 115,
     "description": "Cozy double room with balcony",
@@ -113,7 +113,7 @@
   },
   {
     "roomNo": 115,
-    "type": "Family",
+    "type": "Suite",
     "beds": 4,
     "pricePerNight": 195,
     "description": "Spacious family room with dining area",
@@ -129,7 +129,7 @@
   },
   {
     "roomNo": 117,
-    "type": "Single",
+    "type": "Standard",
     "beds": 1,
     "pricePerNight": 70,
     "description": "Basic single room with free WiFi",
@@ -145,7 +145,7 @@
   },
   {
     "roomNo": 119,
-    "type": "Double",
+    "type": "Deluxe",
     "beds": 2,
     "pricePerNight": 105,
     "description": "Standard double room with minibar",
@@ -153,7 +153,7 @@
   },
   {
     "roomNo": 120,
-    "type": "Family",
+    "type": "Suite",
     "beds": 5,
     "pricePerNight": 220,
     "description": "Extra-large family room with kitchen",

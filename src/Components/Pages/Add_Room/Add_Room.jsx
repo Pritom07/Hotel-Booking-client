@@ -86,7 +86,7 @@ const Add_Room = () => {
                   Select Room Type
                 </option>
                 <option value="Standard">Standard</option>
-                <option value="Delux">Delux</option>
+                <option value="Delux">Deluxe</option>
                 <option value="Suit">Suit</option>
               </select>
             </div>

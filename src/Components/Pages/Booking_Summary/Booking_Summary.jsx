@@ -3,7 +3,7 @@ import BookingInfoTable from "./BookingInfoTable";
 
 const Booking_Summary = () => {
   const bookRoomData = useLoaderData();
-  console.log(bookRoomData);
+
   return (
     <div className="font-raleway mt-4">
       <p className="text-center text-3xl md:text-4xl font-semibold underline text-[#374151]">

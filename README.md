@@ -79,8 +79,4 @@ cd Hotel-Booking-client
 
 ### 📊 Booking Summary
 
-![Booking Summary](./screenshots/Bookingsummary.PNG)
-
-```
-
-```
+![Booking Summary](/screenshots/Bookingsummary.PNG)

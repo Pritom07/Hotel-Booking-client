@@ -8,6 +8,7 @@ import Room_List from "../Pages/Room_List/Room_List";
 import Add_Room from "../Pages/Add_Room/Add_Room";
 import Booking_Summary from "../Pages/Booking_Summary/Booking_Summary";
 import Home from "../Pages/Home/Home";
+import EditRoom from "../Pages/Room_List/EditRoom";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,13 @@ const router = createBrowserRouter(
           element={<Home />}
         ></Route>
         <Route path="/rooms" element={<Room_List />}></Route>
+        <Route
+          path="/rooms/edit_room/:id"
+          loader={({ params }) =>
+            fetch(`http://localhost:3000/rooms/edit_room/${params.id}`)
+          }
+          element={<EditRoom />}
+        ></Route>
         <Route path="/create-room" element={<Add_Room />}></Route>
         <Route path="/booking-summary" element={<Booking_Summary />}></Route>
       </Route>

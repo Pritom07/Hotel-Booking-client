@@ -1,11 +1,13 @@
 import axios from "axios";
 import PropTypes from "prop-types";
 import { CgEditBlackPoint } from "react-icons/cg";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Item = ({ room, isShown, roomData, setRoomData }) => {
   const { _id, type, roomNo, pricePerNight, description, beds, available } =
     room;
+  const navigate = useNavigate();
 
   const handleRoomDelete = () => {
     Swal.fire({
@@ -31,6 +33,10 @@ const Item = ({ room, isShown, roomData, setRoomData }) => {
         });
       }
     });
+  };
+
+  const handleEditRoom = () => {
+    navigate(`/rooms/edit_room/${_id}`);
   };
 
   return (
@@ -73,7 +79,10 @@ const Item = ({ room, isShown, roomData, setRoomData }) => {
         </p>
         {isShown ? (
           <div className="mt-2">
-            <button className="w-full bg-amber-500 text-white font-semibold py-1.5 rounded-[18px] cursor-pointer active:scale-x-95">
+            <button
+              onClick={handleEditRoom}
+              className="w-full bg-amber-500 text-white font-semibold py-1.5 rounded-[18px] cursor-pointer active:scale-x-95"
+            >
               EDIT
             </button>
             <button

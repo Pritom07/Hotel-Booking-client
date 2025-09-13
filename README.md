@@ -1,12 +1,73 @@
-# React + Vite
+# 🌐 Hotel Booking Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend of the **Minimal Hotel Room Booking Management System**.  
+Users can browse rooms, check availability, and book rooms with a simple, responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **HTML5**
+- **Tailwind CSS**
+- **React JS**
+- **DaisyUI**
+- **Framer Motion**
+- **Sweet alert2**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Pritom07/Hotel-Booking-client.git
+cd Hotel-Booking-client
+
+📌 Features :
+
+✅ View all rooms
+
+✅ Book available rooms (with form validation)
+
+✅ Edit/Delete rooms (admin)
+
+✅ Sweet alert for success/error
+
+✅ Create room
+
+✅ Booking summary report page
+
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page 1st Screenshot
+![Home Page 1](./screenshots/homepage1.PNG)
+
+### 🏠 Home Page 2nd Screenshot
+![Home Page 2](./screenshots/homepage2.PNG)
+
+### 🏠 Home Page 3rd Screenshot
+![Home Page 3](./screenshots/homepage3.PNG)
+
+### 🛏️ Room Card with Edit/Delete/Book button
+![Room List 1](./screenshots/Roomlist1.PNG)
+
+### 🛏️ Room Card with Edit/Delete/Book button
+![Room List 2](./screenshots/Roomlist2.PNG)
+
+### 🛏️ Edit Room
+![Edit Room](./screenshots/Editroom.PNG)
+
+### 🛏️ Delete Room
+![Delete Room](./screenshots/Deleteroom.PNG)
+
+### 📖 Booking Room
+![Booking Room](./screenshots/Bookroom.PNG)
+
+### 📖 Create Room
+![Create Room](./screenshots/Createroom.PNG)
+
+### 📊 Booking Summary
+![Booking Summary](./screenshots/Bookingsummary.PNG)
+```

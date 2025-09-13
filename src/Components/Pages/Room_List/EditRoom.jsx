@@ -50,9 +50,9 @@ const EditRoom = () => {
     <div>
       <div className="flex flex-col justify-center items-center max-w-5xl mx-auto mt-5 font-raleway">
         <h1 className="text-4xl font-semibold underline text-[#374151]">
-          EDIT ROOM -> {roomNo}
+          EDIT ROOM : {roomNo}
         </h1>
-        <h1 className="underline text-center text-xl font-semibold mt-1 text-[#374151]">
+        <h1 className="underline text-center text-xl font-semibold mt-1 text-[#374151] px-1">
           Room ID - {_id}
         </h1>
         <p className="text-[18px] text-[#1B1A1A] text-justify md:text-center mt-3.5 px-1.5">
@@ -149,7 +149,7 @@ const EditRoom = () => {
           />
         </div>
         <button className="bg-blue-500 text-2xl font-raleway font-semibold active:scale-x-95 text-white border-2 border-blue-500 w-full p-1.5 mt-6 rounded-[4px] cursor-pointer">
-          Create Room
+          Edit Room
         </button>
       </form>
     </div>

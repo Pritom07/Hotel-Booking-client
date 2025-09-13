@@ -39,6 +39,10 @@ const Item = ({ room, isShown, roomData, setRoomData }) => {
     navigate(`/rooms/edit_room/${_id}`);
   };
 
+  const handleBookRoom = () => {
+    navigate(`/rooms/book_room/${_id}`);
+  };
+
   return (
     <div className="card bg-base-100 shadow-sm border-2 border-slate-200 font-raleway">
       <div className="card-body">
@@ -91,7 +95,10 @@ const Item = ({ room, isShown, roomData, setRoomData }) => {
             >
               DELETE
             </button>
-            <button className="w-full bg-green-500 text-white font-semibold py-1.5 mt-2 rounded-[18px] cursor-pointer active:scale-x-95">
+            <button
+              onClick={handleBookRoom}
+              className="w-full bg-green-500 text-white font-semibold py-1.5 mt-2 rounded-[18px] cursor-pointer active:scale-x-95"
+            >
               BOOK
             </button>
           </div>

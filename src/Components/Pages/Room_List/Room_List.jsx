@@ -36,14 +36,14 @@ const Room_List = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:3000/rooms?page=${currentPage}&size=${itemsPerPage}`
+        `https://hotel-server-seven.vercel.app/rooms?page=${currentPage}&size=${itemsPerPage}`
       )
       .then((res) => setRoomData(res.data));
   }, [currentPage, itemsPerPage]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/totDocument")
+      .get("https://hotel-server-seven.vercel.app/totDocument")
       .then((res) => setcount(res.data));
   }, []);
 

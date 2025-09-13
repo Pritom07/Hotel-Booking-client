@@ -33,7 +33,10 @@ const EditRoom = () => {
     };
 
     axios
-      .patch(`http://localhost:3000/rooms/udpateRoom/${_id}`, updatedRoomData)
+      .patch(
+        `https://hotel-server-seven.vercel.app/rooms/udpateRoom/${_id}`,
+        updatedRoomData
+      )
       .then((res) => {
         if (res.data.modifiedCount > 0) {
           Swal.fire({

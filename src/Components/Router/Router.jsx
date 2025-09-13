@@ -17,28 +17,28 @@ const router = createBrowserRouter(
       <Route path="/" element={<App />}>
         <Route
           index
-          loader={() => fetch("http://localhost:3000/rooms")}
+          loader={() => fetch("https://hotel-server-seven.vercel.app/rooms")}
           element={<Home />}
         ></Route>
         <Route path="/rooms" element={<Room_List />}></Route>
         <Route
           path="/rooms/edit_room/:id"
           loader={({ params }) =>
-            fetch(`http://localhost:3000/rooms/${params.id}`)
+            fetch(`https://hotel-server-seven.vercel.app/rooms/${params.id}`)
           }
           element={<EditRoom />}
         ></Route>
         <Route
           path="/rooms/book_room/:id"
           loader={({ params }) =>
-            fetch(`http://localhost:3000/rooms/${params.id}`)
+            fetch(`https://hotel-server-seven.vercel.app/rooms/${params.id}`)
           }
           element={<BookRoom />}
         ></Route>
         <Route path="/create-room" element={<Add_Room />}></Route>
         <Route
           path="/booking-summary"
-          loader={() => fetch("http://localhost:3000/bookings")}
+          loader={() => fetch("https://hotel-server-seven.vercel.app/bookings")}
           element={<Booking_Summary />}
         ></Route>
       </Route>

@@ -29,17 +29,19 @@ const Add_Room = () => {
       description,
     };
 
-    axios.post("http://localhost:3000/rooms", roomData).then((res) => {
-      if (res.data.insertedId) {
-        Swal.fire({
-          title: "Room Added Successfully!",
-          text: "Click ok to proceed",
-          confirmButtonColor: "#1E88E5",
-          icon: "success",
-        });
-        e.target.reset();
-      }
-    });
+    axios
+      .post("https://hotel-server-seven.vercel.app/rooms", roomData)
+      .then((res) => {
+        if (res.data.insertedId) {
+          Swal.fire({
+            title: "Room Added Successfully!",
+            text: "Click ok to proceed",
+            confirmButtonColor: "#1E88E5",
+            icon: "success",
+          });
+          e.target.reset();
+        }
+      });
   };
 
   return (

@@ -20,17 +20,19 @@ const Item = ({ room, isShown, roomData, setRoomData }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:3000/room/${_id}`).then((res) => {
-          if (res.data.deletedCount > 0) {
-            Swal.fire({
-              title: "Deleted!",
-              text: "Your Room has been deleted.",
-              icon: "success",
-            });
-            const newRoomData = roomData.filter((room) => room._id !== _id);
-            setRoomData(newRoomData);
-          }
-        });
+        axios
+          .delete(`https://hotel-server-seven.vercel.app/room/${_id}`)
+          .then((res) => {
+            if (res.data.deletedCount > 0) {
+              Swal.fire({
+                title: "Deleted!",
+                text: "Your Room has been deleted.",
+                icon: "success",
+              });
+              const newRoomData = roomData.filter((room) => room._id !== _id);
+              setRoomData(newRoomData);
+            }
+          });
       }
     });
   };

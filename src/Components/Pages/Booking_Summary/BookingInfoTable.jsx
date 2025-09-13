@@ -9,7 +9,7 @@ const BookingInfoTable = ({ bookedData, idx }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/rooms/${roomId}`)
+      .get(`https://hotel-server-seven.vercel.app/rooms/${roomId}`)
       .then((res) => setRoomData(res.data));
   }, [roomId]);
 

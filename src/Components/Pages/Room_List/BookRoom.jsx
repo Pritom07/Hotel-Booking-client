@@ -27,17 +27,19 @@ const BookRoom = () => {
       return;
     }
 
-    axios.post("http://localhost:3000/bookroom", bookData).then((res) => {
-      if (res.data.insertedId) {
-        Swal.fire({
-          title: `Room ${roomNo} is Booked Now !`,
-          text: "Click Ok to proceed",
-          icon: "success",
-          confirmButtonColor: "#1E88E5",
-        });
-        navigate("/rooms");
-      }
-    });
+    axios
+      .post("https://hotel-server-seven.vercel.app/bookroom", bookData)
+      .then((res) => {
+        if (res.data.insertedId) {
+          Swal.fire({
+            title: `Room ${roomNo} is Booked Now !`,
+            text: "Click Ok to proceed",
+            icon: "success",
+            confirmButtonColor: "#1E88E5",
+          });
+          navigate("/rooms");
+        }
+      });
   };
 
   return (

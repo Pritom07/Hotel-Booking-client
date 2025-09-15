@@ -16,7 +16,7 @@ Users can browse rooms, check availability, and book rooms with a simple, respon
 
 ---
 
-📌 Features :
+## 📌 Features :
 
 ✅ View all rooms
 
